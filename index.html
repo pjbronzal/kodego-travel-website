@@ -10,15 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <style>
-      .subscribe {
-            background-color: #C95B0C;
-        }
-    </style>
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">BookEase</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,22 +50,22 @@
         </div>
       </nav>
 </header>
+
 <main>
-    <section id="hero">
-        <div class="hero-content">
-            <h1>BookEase: Your Comprehensive Platform for Effortless Travel Planning, Seamless Reservations, and Unparalleled Adventures Worldwide</h1>
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Where do you want to go?
-                </button>
-                  <input type="text" id="datepicker" placeholder="When? 📆">
-                  <button id="searchButton" class="btn btn-warning">Search</button>
-              </div>
-
+  <section id="hero" class="bg-primary text-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1>BookEase: Your Comprehensive Platform for Effortless Travel Planning, Seamless Reservations, and Unparalleled Adventures Worldwide</h1>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Where do you want to go?" aria-label="Destination" aria-describedby="destination-addon">
+                    <input type="text" class="form-control" id="datepicker" placeholder="When? 📆" aria-label="Date" aria-describedby="date-addon">
+                    <button id="searchButton" class="btn btn-warning">Search</button>
+                </div>
+            </div>
         </div>
-    </section>
-
-
+    </div>
+</section>
 
     <section class="container mt-5" id="services">
       <h1 class="text-center">Last-minute Weekend Deals</h1>
@@ -84,7 +79,7 @@
                   <img src="1.jpg" class="card-img-top" alt="Image 1">
                   <div class="card-body">
                   <small><strong>9.4/10</strong> Exceptional (1000 reviews)</small>
-                    <h5 class="card-title">Boracay</h5>
+                    <h5 class="card-title fw-bold">Boracay</h5>
                     <small class="card-text d-block pb-2 d-block pb-2">Aklan, Philippines</small>
                     <p><b>P29,494</b><small> <s>P39,325</s> </small><br>
                     <small>per night</small><br>
@@ -100,7 +95,7 @@
                     <img src="1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                     <small><strong>9.4/10</strong> Exceptional (1000 reviews)</small>
-                      <h5 class="card-title">Boracay</h5>
+                      <h5 class="card-title fw-bold">Boracay</h5>
                       <small class="card-text d-block pb-2 d-block pb-2">Aklan, Philippines</small>
                       <p><b>P29,494</b><small> <s>P39,325</s> </small><br>
                       <small>per night</small><br>
@@ -116,7 +111,7 @@
                     <img src="1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                     <small><strong>9.4/10</strong> Exceptional (1000 reviews)</small>
-                      <h5 class="card-title">Boracay</h5>
+                      <h5 class="card-title fw-bold">Boracay</h5>
                       <small class="card-text d-block pb-2 d-block pb-2">Aklan, Philippines</small>
                       <p><b>P29,494</b><small> <s>P39,325</s> </small><br>
                       <small>per night</small><br>
@@ -132,7 +127,7 @@
                     <img src="1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                     <small><strong>9.4/10</strong> Exceptional (1000 reviews)</small>
-                      <h5 class="card-title">Boracay</h5>
+                      <h5 class="card-title fw-bold">Boracay</h5>
                       <small class="card-text d-block pb-2 d-block pb-2">Aklan, Philippines</small>
                       <p><b>P29,494</b><small> <s>P39,325</s> </small><br>
                       <small>per night</small><br>
@@ -152,7 +147,7 @@
                     <img src="1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                     <small><strong>9.4/10</strong> Exceptional (1000 reviews)</small>
-                      <h5 class="card-title">Boracay</h5>
+                      <h5 class="card-title fw-bold">Boracay</h5>
                       <small class="card-text d-block pb-2 d-block pb-2">Aklan, Philippines</small>
                       <p><b>P29,494</b><small> <s>P39,325</s> </small><br>
                       <small>per night</small><br>
@@ -168,7 +163,7 @@
                     <img src="1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                     <small><strong>9.4/10</strong> Exceptional (1000 reviews)</small>
-                      <h5 class="card-title">Boracay</h5>
+                      <h5 class="card-title fw-bold">Boracay</h5>
                       <small class="card-text d-block pb-2 d-block pb-2">Aklan, Philippines</small>
                       <p><b>P29,494</b><small> <s>P39,325</s> </small><br>
                       <small>per night</small><br>
@@ -184,7 +179,7 @@
                     <img src="1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                     <small><strong>9.4/10</strong> Exceptional (1000 reviews)</small>
-                      <h5 class="card-title">Boracay</h5>
+                      <h5 class="card-title fw-bold">Boracay</h5>
                       <small class="card-text d-block pb-2 d-block pb-2">Aklan, Philippines</small>
                       <p><b>P29,494</b><small> <s>P39,325</s> </small><br>
                       <small>per night</small><br>
@@ -199,7 +194,7 @@
                     <img src="1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                     <small><strong>9.4/10</strong> Exceptional (1000 reviews)</small>
-                      <h5 class="card-title">Boracay</h5>
+                      <h5 class="card-title fw-bold">Boracay</h5>
                       <small class="card-text d-block pb-2 d-block pb-2">Aklan, Philippines</small>
                       <p><b>P29,494</b><small> <s>P39,325</s> </small><br>
                       <small>per night</small><br>

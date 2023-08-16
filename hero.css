@@ -5,20 +5,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-    padding: 5px;
-}
 .navbar a {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
+
 .navbar .navbar-brand {
     color: #C95B0C;
     font-size: 30px;
 }
+
 #hero {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -26,39 +25,35 @@
     background-size: cover;
     background-position: center;
 }
-.hero-content {
-    margin: 200px;
-}
-.hero-content h1 {
+
+#hero h1 {
     color: white;
     font-style: italic;
 }
-.hero-content div.btn-group {
-    margin-top: 50px;
-}
-.hero-content div.btn-group .dropdown-menu {
-    background-color: white;
-}
-.hero-content .dropdown-toggle {
-    width: 300px;
-    height: 40px;
-    font-size: 16px;
-    background-color: white;
-    border-radius: 0;
-    color: grey;
-    outline: none;
-    box-shadow: none;
-    cursor: pointer;
-    text-align: left;
-}
-.hero-content .dropdown-toggle::after,
-    .dropdown-toggle::before {
-    display: none;
-}
-.hero-content .dropdown-menu {
-    background-color: white;
-}
-.hero-content .dropdown-toggle:hover {
-    background-color: white;
-    cursor: default;
-}
+
+#carouselExample {
+    height: 600px;
+    overflow: hidden;
+  }
+
+  #carouselExample img {
+    height: 600px;
+    object-fit: cover;
+  }
+
+  #carouselExample .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  #boracay {
+    padding: 0 50px;
+  }
+  
+  .subscribe {
+    background-color: #C95B0C;
+  }
