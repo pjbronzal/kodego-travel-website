@@ -1,278 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boracay | BookEase</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="hero.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">BookEase</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boracay | BookEase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BookEase</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tours
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tours
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-  </header>
-    
-
-    <div id="carouselExample" class="carousel slide mb-5">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="boracaycarousel.jfif"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="overlay"></div>
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Boracay, Philippines</h2>
-            <p>Experience the stunning beauty of Boracay's beaches and crystal-clear waters.</p>
-            <button class="btn btn-warning">Book Now!</button>
-          </div>
-        </div>
-
-        <!-- Add more carousel items here -->
-
-        <div class="carousel-item">
-          <img
-            src="boracaycarousel2.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="overlay"></div>
-          <div class="carousel-caption d-none d-md-block"></div>
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="boracaycarousel3.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="overlay"></div>
-          <div class="carousel-caption d-none d-md-block"></div>
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="boracaycarousel4.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="overlay"></div>
-          <div class="carousel-caption d-none d-md-block"></div>
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="boracaycarousel2.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="overlay"></div>
-          <div class="carousel-caption d-none d-md-block"></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </nav>
+  </header>
+
+  <div id="carouselExample" class="carousel slide mb-5">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="boracaycarousel.jfif" class="d-block w-100" alt="..." />
+        <div class="overlay"></div>
+      </div>
+      
+      <!-- Add more carousel items here -->
+      
+      <div class="carousel-item">
+        <img src="boracaycarousel2.jpg" class="d-block w-100" alt="..." />
+        <div class="overlay"></div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="boracaycarousel3.jpg" class="d-block w-100" alt="..." />
+        <div class="overlay"></div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="boracaycarousel4.jpg" class="d-block w-100" alt="..." />
+        <div class="overlay"></div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="boracaycarousel2.jpg" class="d-block w-100" alt="..." />
+        <div class="overlay"></div>
+      </div>
     </div>
     
-
-
-
-    <section id="boracay" class="container mt-5">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="fw-bold">Boracay, Philippines</h1>
-          <hr />
-          <p>
-            Boracay, one of the top Islands in the Philippines, is popular for its
-            beaches and blessed with a long stretch of powdery white sand, crystal
-            clear and azure waters, and a stunning sunset.
-          </p>
-          <p>
-            Boracay is the most iconic island in the Philippines and has won multiple
-            awards in previous years. In 2019, Boracay was the top of the Asia
-            Category in Conde Nast Traveler's The Best Islands in the World 2019
-            Readers Choice Awards. In 2020, Boracay retains its Top 10 island status
-            alongside other Philippine Islands as it places 6th in the Top 10 list.
-          </p>
-          <p>
-            You'll never run out of exciting things to do in Boracay, from swimming,
-            island-hopping, diving, snorkeling, parasailing, and kayaking.
-          </p>
-        </div>
-      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
     
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-12 text-center">
-          <img src="boracay1.jpg" class="img-fluid" alt="Boracay Beach" />
-        </div>
-      </div>
-    
-      <h1 class="mt-5 fw-bold">Best Time To Go</h1>
-      <hr />
-    
-      <div class="row">
-        <div class="col-md-6">
-          <h3 class="fw-bold">Dry Season - December to May</h3>
-          <p>
-            You can enjoy Boracay all year round, but the best season to experience
-            the island and its beaches are from December to May.
-          </p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="boracay2.jpg" class="img-fluid" alt="Dry Season" />
-        </div>
-      </div>
-    
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <h3 class="fw-bold">Peak Season - March to May</h3>
-          <p>
-            Boracay’s peak season is from March to May, the country’s summer months.
-            During this period, Boracay becomes the go-to beach destination for
-            Filipinos.
-          </p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="boracay3.jpg" class="img-fluid" alt="Peak Season" />
-        </div>
-      </div>
-    
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <h3 class="fw-bold">Festival Season - January</h3>
-          <p>
-            On the month of January, the Ati-Atihan festival is celebrated in
-            multiple municipalities of the Aklan Province and is held in honor of
-            the Santo Niño.
-          </p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="boracay4.jpg" class="img-fluid" alt="Festival Season" />
-        </div>
-      </div>
-    </section>
-    
-    
-
-    <div class="mt-5 p-4 subscribe">
-      <p class="text-center text-white">Save up to 50% on tours! Get exclusive access to members only deals by email.</p>
-      <div class="input-group w-50 m-auto">
-          <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Enter your email" aria-describedby="subscribe-button">
-          <button class="btn btn-warning" type="button" id="subscribe-button">Subscribe</button>
-      </div>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-    <footer class="bg-dark text-light">
-      <div class="container p-5">
-          <div class="row">
-              <div class="col-md-3">
-                  <h5 class="pb-2">For Travellers</h5>
-                  <ul class="list-unstyled">
-                      <li><a href="" class="text-decoration-none text-white">Travel Blog</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Travel News</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Travel Planning</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Food & Drinks</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Festivals & Events</a></li>
-                      <li><a href="" class="text-decoration-none text-white">FAQs</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-3">
-                  <h5 class="pb-2">Our Company</h5>
-                  <ul class="list-unstyled">
-                      <li><a href="" class="text-decoration-none text-white">About Us</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Travel News</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Terms & Conditions</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Privacy Policy</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Contact Us</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-3">
-                  <h5 class="pb-2">Things To Know</h5>
-                  <ul class="list-unstyled">
-                      <li><a href="" class="text-decoration-none text-white">Best Private Tours</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Things To Do</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Attractions in Philippines</a></li>
-                      <li><a href="" class="text-decoration-none text-white">Honeymoon Destinations</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-3">
-                  <h5 class="pb-2">Follow Us</h5>
-                  <ul class="list-inline">
-                      <li class="list-inline-item"><a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a></li>
-                      <li class="list-inline-item"><a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
-                      <li class="list-inline-item"><a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a></li>
-                  </ul>
-              </div>
-          </div>
+  
+  <div class="carousel-caption d-md-block text-center">
+    <h2>Boracay, Philippines</h2>
+    <p>Experience the stunning beauty of Boracay's beaches and crystal-clear waters.</p>
+    <button class="btn btn-warning">Book Now!</button>
+  </div>
+  
+
+  <section id="boracay" class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="fw-bold">Boracay, Philippines</h1>
+        <hr />
+        <p>
+          Boracay, one of the top Islands in the Philippines, is popular for its
+          beaches and blessed with a long stretch of powdery white sand, crystal
+          clear and azure waters, and a stunning sunset.
+        </p>
+        <p>
+          Boracay is the most iconic island in the Philippines and has won multiple
+          awards in previous years. In 2019, Boracay was the top of the Asia
+          Category in Conde Nast Traveler's The Best Islands in the World 2019
+          Readers Choice Awards. In 2020, Boracay retains its Top 10 island status
+          alongside other Philippine Islands as it places 6th in the Top 10 list.
+        </p>
+        <p>
+          You'll never run out of exciting things to do in Boracay, from swimming,
+          island-hopping, diving, snorkeling, parasailing, and kayaking.
+        </p>
       </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-12 text-center">
+        <img src="boracay1.jpg" class="img-fluid" alt="Boracay Beach" />
+      </div>
+    </div>
+
+    <h1 class="mt-5 fw-bold">Best Time To Go</h1>
+    <hr />
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="fw-bold">Dry Season - December to May</h3>
+        <p>
+          You can enjoy Boracay all year round, but the best season to experience
+          the island and its beaches are from December to May.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="boracay2.jpg" class="img-fluid" alt="Dry Season" />
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <h3 class="fw-bold">Peak Season - March to May</h3>
+        <p>
+          Boracay’s peak season is from March to May, the country’s summer months.
+          During this period, Boracay becomes the go-to beach destination for
+          Filipinos.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="boracay3.jpg" class="img-fluid" alt="Peak Season" />
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <h3 class="fw-bold">Festival Season - January</h3>
+        <p>
+          On the month of January, the Ati-Atihan festival is celebrated in
+          multiple municipalities of the Aklan Province and is held in honor of
+          the Santo Niño.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="boracay4.jpg" class="img-fluid" alt="Festival Season" />
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="mt-5 p-4 subscribe">
+    <p class="text-center text-white">Save up to 50% on tours! Get exclusive access to members only deals by email.</p>
+    <div class="input-group w-50 m-auto">
+      <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Enter your email"
+        aria-describedby="subscribe-button">
+      <button class="btn btn-warning" type="button" id="subscribe-button">Subscribe</button>
+    </div>
+  </div>
+  <footer class="bg-dark text-light">
+    <div class="container p-5">
       <div class="row">
-          <p class="text-center">Copyright &copy; 2023. All rights reserved.</p>
+        <div class="col-md-3">
+          <h5 class="pb-2">For Travellers</h5>
+          <ul class="list-unstyled">
+            <li><a href="" class="text-decoration-none text-white">Travel Blog</a></li>
+            <li><a href="" class="text-decoration-none text-white">Travel News</a></li>
+            <li><a href="" class="text-decoration-none text-white">Travel Planning</a></li>
+            <li><a href="" class="text-decoration-none text-white">Food & Drinks</a></li>
+            <li><a href="" class="text-decoration-none text-white">Festivals & Events</a></li>
+            <li><a href="" class="text-decoration-none text-white">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="pb-2">Our Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="" class="text-decoration-none text-white">About Us</a></li>
+            <li><a href="" class="text-decoration-none text-white">Travel News</a></li>
+            <li><a href="" class="text-decoration-none text-white">Terms & Conditions</a></li>
+            <li><a href="" class="text-decoration-none text-white">Privacy Policy</a></li>
+            <li><a href="" class="text-decoration-none text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="pb-2">Things To Know</h5>
+          <ul class="list-unstyled">
+            <li><a href="" class="text-decoration-none text-white">Best Private Tours</a></li>
+            <li><a href="" class="text-decoration-none text-white">Things To Do</a></li>
+            <li><a href="" class="text-decoration-none text-white">Attractions in Philippines</a></li>
+            <li><a href="" class="text-decoration-none text-white">Honeymoon Destinations</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="pb-2">Follow Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
       </div>
+    </div>
+    <div class="row">
+      <p class="text-center">Copyright &copy; 2023. All rights reserved.</p>
+    </div>
   </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
