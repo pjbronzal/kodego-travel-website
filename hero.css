@@ -1,59 +1,63 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .navbar a {
-    font-weight: bold;
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .navbar .navbar-brand {
-    color: #C95B0C;
-    font-size: 30px;
+  color: #C95B0C;
+  font-size: 30px;
 }
 
 #hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: url(Sunset.jpeg);
-    background-size: cover;
-    background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(Sunset.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 #hero h1 {
-    color: white;
-    font-style: italic;
+  color: white;
+  font-style: italic;
 }
 
 #carouselExample {
-    height: 600px;
-    overflow: hidden;
-  }
+  height: 600px;
+  overflow: hidden;
+}
 
-  #carouselExample img {
-    height: 600px;
-    object-fit: cover;
-  }
+#carouselExample img {
+  height: 600px;
+  object-fit: cover;
+}
 
-  #carouselExample .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
+#carouselExample .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
-  #boracay {
-    padding: 0 50px;
-  }
-  
-  .subscribe {
-    background-color: #C95B0C;
-  }
+#boracay {
+  padding: 0 50px;
+}
+
+.subscribe {
+  background-color: #C95B0C;
+}
